@@ -1,0 +1,22 @@
+competitions:
+  - id: ibjjf_events
+    org: ibjjf
+    mode: results
+    cadence: weekly
+  - id: adcc_main
+    org: adcc
+    mode: results
+    cadence: monthly
+  - id: grappling_industries
+    org: gi
+    mode: results
+    cadence: monthly
+  - id: smoothcomp_local
+    org: smoothcomp
+    mode: export
+    event_ids: ["12345","67890"]
+    cadence: manual
+rankings:
+  - id: ibjjf_rankings
+    org: ibjjf
+    cadence: weekly

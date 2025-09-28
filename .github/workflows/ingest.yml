@@ -1,0 +1,27 @@
+name: ingest
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch: {}
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install pydantic httpx pandas pyarrow duckdb
+      - run: python ingest/pull_and_normalize.py
+      - name: Commit
+        run: |
+          git config user.name "bjj-bot"
+          git config user.email "bjj-bot@users.noreply.github.com"
+          git add -A
+          git diff --quiet && echo "No changes" || git commit -m "data: refresh $(date -u +%F)"
+      - name: PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          title: "Data refresh"
+          commit-message: "data: refresh"
+          branch: data-refresh
