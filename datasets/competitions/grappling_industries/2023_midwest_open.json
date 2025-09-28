@@ -1,0 +1,35 @@
+{
+  "competition": {
+    "name": "Grappling Industries Midwest Open",
+    "date": "2023-06-15",
+    "location": "Chicago, IL",
+    "organizer": "Grappling Industries"
+  },
+  "divisions": [
+    {
+      "belt_level": "White Belt",
+      "weight_class": "Lightweight",
+      "age_group": "Adult",
+      "results": [
+        {
+          "place": 1,
+          "athlete": "John Smith",
+          "team": "Gracie Barra",
+          "matches": [
+            {"opponent": "Mike Johnson", "method": "Submission", "time": "2:30"},
+            {"opponent": "Chris Brown", "method": "Points", "score": "8-2"}
+          ]
+        },
+        {
+          "place": 2,
+          "athlete": "Mike Johnson",
+          "team": "Alliance",
+          "matches": [
+            {"opponent": "John Smith", "method": "Submission", "time": "2:30"},
+            {"opponent": "Chris Brown", "method": "Points", "score": "6-4"}
+          ]
+        }
+      ]
+    }
+  ]
+}
