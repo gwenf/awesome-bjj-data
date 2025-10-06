@@ -1,7 +1,8 @@
 from __future__ import annotations
 from pathlib import Path
 from typing import Literal, Iterable
-import json, datetime as dt
+import json
+import datetime as dt
 import pandas as pd
 import httpx
 from pydantic import BaseModel, HttpUrl
