@@ -48,6 +48,12 @@ This document contains links to external sources of Brazilian Jiu-Jitsu data, AP
 - **Technique Database**: Detailed technique breakdowns
 - **Competition History**: Historical match results and statistics
 
+### BJJGraph
+- **Website**: [BJJGraph](https://bjjgraph.org)
+- **Technique Graph**: 133 positions and 1,315 techniques as a state machine, with authored attempt probabilities and success/failure/counter outcomes per ruleset (gi and no-gi)
+- **Graph Data**: [graph.json](https://github.com/diogoseca/bjjgraph/releases/latest/download/graph.json) (latest release, 50 MB, or 7 MB gzipped; no authentication)
+- **Source Code**: [diogoseca/bjjgraph](https://github.com/diogoseca/bjjgraph)
+
 ### FloGrappling
 - **Website**: [FloGrappling](https://www.flograppling.com/)
 - **Rankings**: [FloGrappling Rankings](https://www.flograppling.com/rankings)
